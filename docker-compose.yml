@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  meu-ambiente-cobol:
+    build: .
+    volumes:
+      - .:/app
+    tty: true

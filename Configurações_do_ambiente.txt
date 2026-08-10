@@ -1,0 +1,16 @@
+1. Abra o Docker Desktop!
+
+2. Ligar o ambiente em segundo plano (rodar no PowerShell):
+-> docker compose up -d
+
+3. Acessar o terminal do Linux dentro do container:
+-> docker compose exec meu-ambiente-cobol bash
+
+4. Compilar e executar o código (rodar dentro do terminal do Linux):
+-> cobc -x -std=cobol85 nome-do-arquivo.cbl && ./nome-do-arquivo
+
+5. Sair do container quando terminar de programar:
+-> exit
+
+6. Desligar e limpar o ambiente (de volta no PowerShell):
+-> docker compose down
